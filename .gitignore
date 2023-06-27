@@ -1,0 +1,4 @@
+test_ner.ipynb
+.ipynb_checkpoints/
+.helm-chart
+data/
