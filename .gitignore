@@ -1,4 +1,4 @@
 test_ner.ipynb
 .ipynb_checkpoints/
 .helm-chart
-data/
+data/df_ner.pickle
