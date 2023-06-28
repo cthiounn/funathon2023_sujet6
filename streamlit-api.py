@@ -4,7 +4,7 @@ import spacy_streamlit
 
 st.text("Version : 1.0 ")
 
-models = ["ner_miam_spacy_nlp.tar"]
+models = ["ner_miam_spacy_nlp"]
 default_text = "La madeleine de Proust."
 spacy_streamlit.visualize(models, default_text)
 
