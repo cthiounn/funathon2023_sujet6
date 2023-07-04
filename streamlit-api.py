@@ -11,4 +11,4 @@ st.divider()
 models = ["model-best","ner_miam_spacy_nlp"]
 default_text = "La madeleine de Proust."
 visualizers = ["ner"]
-spacy_streamlit.visualize(models, default_text, visualizers)
+spacy_streamlit.visualize(models=models, default_text=default_text, visualizers=visualizers,show_visualizer_select=True)
