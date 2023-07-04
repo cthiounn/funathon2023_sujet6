@@ -10,6 +10,6 @@ WORKDIR /app
 COPY . .
 
 RUN tar -xvf ner_miam_spacy_nlp.tar
-RUN curl -SL https://minio.lab.sspcloud.fr/cthiounn2/model_yannis_v1.tar.gz -o model_yannis.tar.gz && tar -xzvf model_yannis.tar.gz && rm -rf model_yannis.tar.gz
+RUN curl -SL https://minio.lab.sspcloud.fr/cthiounn2/model_yannis_v1.tar.gz -o model_yannis.tar.gz && tar -xzvf model_yannis.tar.gz && rm -rf model_yannis.tar.gz && mv model_vector .
 
 CMD ["streamlit", "run", "streamlit-api.py","--server.port", "3838"]
